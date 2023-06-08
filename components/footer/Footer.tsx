@@ -1,0 +1,16 @@
+import React from 'react'
+
+const Footer = () => {
+  return (
+    <div>
+      <div>
+        @2023 My Post All rights reserved
+      </div>
+      <div>
+        
+      </div>
+    </div>
+  )
+}
+
+export default Footer
