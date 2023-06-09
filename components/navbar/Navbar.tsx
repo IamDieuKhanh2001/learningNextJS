@@ -6,32 +6,32 @@ import styles from './navbar.module.css'
 const links = [
     {
         id: 1,
-        title: "Home",
+        title: "ホームページ",
         url: "/"
     },
     {
         id: 2,
-        title: "Portfolio",
+        title: "私の情報",
         url: "/portfolio"
     },
     {
         id: 3,
-        title: "Blog",
+        title: "ブログ",
         url: "/blog"
     },
     {
         id: 4,
-        title: "About",
+        title: "このページは",
         url: "/about"
     },
     {
         id: 5,
-        title: "Contact",
+        title: "連絡",
         url: "/contact"
     },
     {
         id: 6,
-        title: "Dashboard",
+        title: "ダッシュボード",
         url: "/dashboard"
     },
 ]
@@ -39,7 +39,7 @@ const links = [
 const Navbar = () => {
     return (
         <div className={styles.container}>
-            <Link href="/" className={styles.logo}>Logo</Link>
+            <Link href="/" className={styles.logo}>NextJS コース</Link>
             <div className={styles.links}>
                 {links.map((link) => (
                     <Link
@@ -56,7 +56,7 @@ const Navbar = () => {
                         console.log("Out")
                     }}
                 >
-                    Logout
+                    ログアウト
                 </button>
             </div>
         </div>
