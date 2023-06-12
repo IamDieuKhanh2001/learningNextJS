@@ -8,7 +8,7 @@ export default function Home() {
     <div className={styles.container}>
       <div className={styles.item}>
         <h1 className={styles.title}>
-          公式のReactJSのフレームワーで開発した
+          公式のReactJSのフレームワーで開発した1:25:04
         </h1>
         <p className={styles.desc}>
         Next.js（ネクストジェイエス）は、
