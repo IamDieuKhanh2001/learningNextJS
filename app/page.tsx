@@ -8,13 +8,14 @@ export default function Home() {
     <div className={styles.container}>
       <div className={styles.item}>
         <h1 className={styles.title}>
-          公式のReactJSのフレームワーで開発した1:25:04
+          公式のReactJSのフレームワーで開発した
         </h1>
         <p className={styles.desc}>
-        Next.js（ネクストジェイエス）は、
-        Reactフレームワークをベースにした人気のあるフルスタックのJavaScriptフレームワークです。
+          Next.js（ネクストジェイエス）は、
+          Reactフレームワークをベースにした人気のあるフルスタックのJavaScriptフレームワークです。
         </p>
-        <Button url="/portfolio" text="スタート" />      </div>
+        <Button url="/portfolio" text="スタート" />
+      </div>
       <div className={styles.item}>
         <Image
           src={Hero}
