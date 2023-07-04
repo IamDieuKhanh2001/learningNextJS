@@ -1,7 +1,6 @@
 "use client"
 import React from 'react'
 import styles from './page.module.css'
-import useSWR from 'swr'
 import { getAllPosts_SWR } from '@/lib/getAllPosts_SWR';
 import { notFound } from 'next/navigation';
 
