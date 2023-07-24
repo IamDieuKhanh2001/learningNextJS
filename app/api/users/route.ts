@@ -1,7 +1,9 @@
 
-//http://localhost:3000/api/posts
+//http://localhost:3000/api/users
 
-export async function GET(request) {
+import { NextResponse } from "next/server"
+
+export const GET = async (request:string) => {
     const posts = [
         {
             userId: 1,
@@ -17,5 +19,5 @@ export async function GET(request) {
         },
     ]
 
-    return new Response(JSON.stringify(posts))
+    return new NextResponse(JSON.stringify(posts))
 }

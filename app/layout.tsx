@@ -3,6 +3,7 @@ import './globals.css'
 import { Inter, Roboto, Poppins } from 'next/font/google'
 import Footer from '@/components/footer/Footer'
 import { ThemeProvider } from "../context/ThemeContext"
+import { Providers } from './GlobalRedux/provider'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -22,14 +23,15 @@ export default function RootLayout({
         className={inter.className}
         suppressHydrationWarning={true}
       >
-        <ThemeProvider>
-          <div className='container'>
-            <Navbar />
-            {children}
-            <Footer />
-          </div>
-        </ThemeProvider>
-
+        <Providers>
+          <ThemeProvider>
+            <div className='container'>
+              <Navbar />
+              {children}
+              <Footer />
+            </div>
+          </ThemeProvider>
+        </Providers>
       </body>
     </html>
   )
